@@ -4,7 +4,7 @@
     "slug": "push-notify-demo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/emergencyLogo.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
@@ -14,7 +14,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "icon": "./assets/icon.png",
+      "icon": "./assets/emergencyLogo.png",
       "bundleIdentifier": "com.yourcompany.pushnotifydemo",
       "infoPlist": {
         "UIBackgroundModes": ["remote-notification"]
@@ -22,27 +22,27 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/emergencyLogo.png",
         "backgroundColor": "#ffffff"
       },
-      "icon": "./assets/icon.png",
+      "icon": "./assets/emergencyLogo.png",
       "package": "com.yourcompany.pushnotifydemo",
       "googleServicesFile": "./google-services.json",
       "edgeToEdgeEnabled": true
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/emergencyLogo.png"
     },
     "extra": {
       "description": "An Expo app that demonstrates custom push notifications with custom sound and icon."
     },
     "notification": {
-      "icon": "./assets/icon.png",
+      "icon": "./assets/emergencyLogo.png",
       "color": "#FF5733",
       "androidMode": "default",
       "androidCollapsedTitle": "New Notification",
       "iosDisplayInForeground": true,
-      "sounds": ["custom-notification.wav"]
+      "sounds": ["ambulanceSound.wav"]
     }
   }
 }

@@ -4,17 +4,17 @@
   "main": "index.ts",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web"
   },
   "dependencies": {
     "expo": "~53.0.9",
+    "expo-device": "~7.1.4",
+    "expo-notifications": "~0.31.2",
     "expo-status-bar": "~2.2.3",
     "react": "19.0.0",
-    "react-native": "0.79.2",
-    "expo-device": "~7.1.4",
-    "expo-notifications": "~0.31.2"
+    "react-native": "^0.79.2"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -23,13 +23,13 @@
   },
   "private": true,
   "notification": {
-    "icon": "./assets/icon.png",
+    "icon": "./assets/emergencyLogo.png",
     "color": "#FF5733",
     "androidMode": "default",
     "androidCollapsedTitle": "New Notification",
     "iosDisplayInForeground": true,
     "sounds": [
-      "custom-notification.wav"
+      "ambulanceSound.wav"
     ]
   }
 }

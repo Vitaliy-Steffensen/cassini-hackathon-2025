@@ -47,9 +47,11 @@ export default function App() {
   async function sendTestNotification() {
     await Notifications.scheduleNotificationAsync({
       content: {
-        title: "Custom Notification!",
-        body: "This is a test notification with custom sound and icon.",
-        sound: "custom-notification.wav",
+        title: "Pull over",
+        body: "Emergency vehicle approaching in 30 seconds",
+        sound: "ambulanceSound.wav",
+        color: "#FF5733",
+        priority: "high",
         badge: 1,
         data: { test: true },
       },
@@ -95,7 +97,7 @@ async function registerForPushNotificationsAsync() {
     await Notifications.setNotificationChannelAsync("default", {
       name: "default",
       importance: Notifications.AndroidImportance.MAX,
-      sound: "custom-notification.wav",
+      sound: "ambulanceSound.wav",
       vibrationPattern: [0, 250, 250, 250],
       lightColor: "#FF231F7C",
     });
